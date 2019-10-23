@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="get" action="/updateBook/{{book.id}}">
+        <h1>Edit Book Info</h1>
+        <div>
+
+            <input type="text" name="nbookName" placeholder="Book Name" value="{{book.name}}"/>
+            <input type="text" name="nauthor" placeholder="Book Author" value="{{book.author}}"/>
+            <input type="number" name="nprice" placeholder="Book price" value="{{book.price}}"/>
+            <input type="submit" name="save"  value="Save"/>
+        </div>
+    </form>
+</body>
+</html>
